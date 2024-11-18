@@ -11,6 +11,7 @@ import { configData } from '../../../config/config'
 
 import { googleAnalyticsMeasurementID } from '../../../config/analytics'
 import { googleTagManagerID } from '../../../config/analytics'
+import ogImage from '../../../assets/og-image.png'
 
 // Props
 type Props = {
@@ -22,10 +23,6 @@ type Props = {
 }
 // Page Metadata
 const {
-	title = configData.siteTitle,
-	description = configData.siteDescription,
-	ogImage = configData.ogImage,
-	canonical = configData.canonical,
 	noindex = configData.noindex
 } = Astro.props
 ---
@@ -37,15 +34,14 @@ const {
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<Seo
-		title={title}
-		description={description}
-		ogImage={ogImage}
-		canonical={canonical}
+		title="Optifit - Gestion de tournois sportifs"
+		description="Optifit est une application web qui permet de gérer des tournois sportifs en toute simplicité. Créez des tournois, gérez les équipes, les matchs et les scores. | Swiss made software 🇨🇭"
+		ogImage={ogImage.src}
 		noindex={noindex}
 	/>
 	<link rel="icon" href={configData.logo.src} type="image/svg+xml" />
 	<link rel="sitemap" href="/sitemap-index.xml" />
 	<meta name="generator" content={Astro.generator} />
-	<meta name="theme-color" content="#134e4a" />
+	<meta name="theme-color" content="#454ade" />
 	<ViewTransitions fallback="swap" />
 </head>
