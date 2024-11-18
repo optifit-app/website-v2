@@ -35,77 +35,69 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'Optifit',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'Optifit is a sports tournament management platform that helps you organize and manage your sports tournaments with ease.',
 		logo: {
-			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			src: '/favicon.ico',
+			alt: 'Optifit - Gestion de tournois sportifs',
+			text: 'Optifit'
 		}
 	},
 	footerColumns: [
 		{
-			category: 'Product',
+			category: 'Contact',
 			subCategories: [
 				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
+					subCategory: 'Demander une démo',
+					subCategoryLink: 'https://calendly.com/gabriel-optifit/demo-optifit',
 				},
 				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
+					subCategory: 'info@optifit.app',
+					subCategoryLink: 'mailto:info@optifit.app',
 				},
 				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
-				},
-				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
-				},
-				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms'
+					subCategory: 'www.start.optifit.app',
+					subCategoryLink: 'https://start.optifit.app',
 				}
 			]
 		},
 		{
-			category: 'About us',
+			category: 'Optifit',
 			subCategories: [
 				{
-					subCategory: 'About us',
-					subCategoryLink: '/'
+					subCategory: 'Accueil',
+					subCategoryLink: '/#',
 				},
 				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
+					subCategory: 'Fonctionnalités',
+					subCategoryLink: '/#features',
 				},
 				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
+					subCategory: 'Connexion',
+					subCategoryLink: 'https://optifit.app',
 				}
 			]
 		},
 		{
-			category: 'Get in touch',
+			category: 'Social',
 			subCategories: [
 				{
-					subCategory: 'Contact',
-					subCategoryLink: '/contact'
+					subCategory: 'Instagram',
+					subCategoryLink: 'https://www.instagram.com/optifit.app/',
 				},
 				{
-					subCategory: 'Support',
-					subCategoryLink: '/contact'
+					subCategory: 'LinkedIn',
+					subCategoryLink: 'https://www.linkedin.com/company/optifit-software/',
 				},
 				{
-					subCategory: 'Join us',
-					subCategoryLink: '/contact'
+					subCategory: 'Mail',
+					subCategoryLink: 'mailto:info@optifit.app',
 				}
 			]
 		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: `© Optifit ${new Date().getFullYear()}`
 	}
 }
