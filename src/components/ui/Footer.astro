@@ -51,20 +51,6 @@ const { footerAbout, footerColumns, subFooter } = footerNavigationData
 		<div class="footer__container">
 			<div class="footer__sub-cols">
 				<div class="footer__sub-col">{subFooter.copywriteText}</div>
-				<nav aria-labelledby="footer-social-links-dark" class="footer__sub-col text-right">
-					<h2 class="sr-only" id="footer-social-links-dark">Social Media Links</h2>
-					<ul>
-						{
-							socialLinks.map((social) => (
-								<li>
-									<a href={social.link} aria-label={social.name}>
-										<Icon name={social.icon} />
-									</a>
-								</li>
-							))
-						}
-					</ul>
-				</nav>
 			</div>
 		</div>
 	</div>

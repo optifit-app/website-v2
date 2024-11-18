@@ -40,12 +40,16 @@ export const navigationBarData: NavData = {
 	navItems: [
 		{
 			name: 'Accueil',
-			link: '/',
+			link: '/#',
 		},
 		{
 			name: 'Fonctionnalités',
 			link: '/#features',
+		},
+		{
+			name: 'Contact',
+			link: '/#contact',
 		}
 	],
-	navActions: [{ name: 'Prendre contact', link: '/contact', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Connexion', link: 'https://optifit.app', style: 'primary', size: 'lg' }]
 }

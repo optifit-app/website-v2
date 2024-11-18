@@ -104,7 +104,7 @@ const savedNavActions = navActions.map((action) => ({
 				{
 					savedNavActions.map((action) => (
 						<Button classes="flex-auto" size={action.size} style={action.style}>
-							<a href="#contact">{action.name}</a>
+							<a href={action.link} target="_blank">{action.name}</a>
 						</Button>
 					))
 				}

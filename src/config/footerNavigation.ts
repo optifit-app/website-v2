@@ -44,7 +44,59 @@ export const footerNavigationData: FooterData = {
 			text: 'Optifit'
 		}
 	},
-	footerColumns: [],
+	footerColumns: [
+		{
+			category: 'Contact',
+			subCategories: [
+				{
+					subCategory: 'Demander une démo',
+					subCategoryLink: 'https://calendly.com/gabriel-optifit/demo-optifit',
+				},
+				{
+					subCategory: 'info@optifit.app',
+					subCategoryLink: 'mailto:info@optifit.app',
+				},
+				{
+					subCategory: 'www.start.optifit.app',
+					subCategoryLink: 'https://start.optifit.app',
+				}
+			]
+		},
+		{
+			category: 'Optifit',
+			subCategories: [
+				{
+					subCategory: 'Accueil',
+					subCategoryLink: '/#',
+				},
+				{
+					subCategory: 'Fonctionnalités',
+					subCategoryLink: '/#features',
+				},
+				{
+					subCategory: 'Connexion',
+					subCategoryLink: 'https://optifit.app',
+				}
+			]
+		},
+		{
+			category: 'Social',
+			subCategories: [
+				{
+					subCategory: 'Instagram',
+					subCategoryLink: 'https://www.instagram.com/optifit.app/',
+				},
+				{
+					subCategory: 'LinkedIn',
+					subCategoryLink: 'https://www.linkedin.com/company/optifit-software/',
+				},
+				{
+					subCategory: 'Mail',
+					subCategoryLink: 'mailto:info@optifit.app',
+				}
+			]
+		}
+	],
 	subFooter: {
 		copywriteText: `© Optifit ${new Date().getFullYear()}`
 	}
